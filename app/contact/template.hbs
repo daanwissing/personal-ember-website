@@ -1,0 +1,24 @@
+<h3>Contact me using the box below:</h3>
+<form>
+  <div class="row">
+    <div class="two columns">
+      <label for="name">Name:</label>
+    </div>
+    <div class="ten columns">
+      {{input id="name" type="text" placeholder="Name"}}
+    </div>
+  </div>
+  <div class="row">
+    <div class="two columns">
+      <label for="message">Message:</label>
+    </div>
+    <div class="ten columns">
+      {{textarea id="message" type="text" placeholder="Write your message here"}}
+    </div>
+  </div>
+  <button class="button-primary" action="submit">
+    <i class="fa fa-send"></i> Send the message!
+  </button>
+</form>
+
+{{outlet}}
